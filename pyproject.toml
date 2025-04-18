@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "wikibot"
-version = "0.1.3"
+version = "0.1.4"
 description = "A CLI tool to interact with MediaWiki via its API"
 authors = ["Aeson V <viloforge@outlook.com>"]
 readme = "README.md"
