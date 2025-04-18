@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "pywikicli"
-version = "0.1.10"
+version = "0.1.11"
 description = "A CLI tool to interact with MediaWiki via its API"
 authors = ["vilosource <viloforge@outlook.com>"]
 readme = "README.md"
