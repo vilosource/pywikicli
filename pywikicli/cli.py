@@ -5,7 +5,7 @@ Defines the main command group and registers subcommands.
 
 import click
 import logging
-from wikibot.config import load_config
+from pywikicli.config import load_config
 
 @click.group(help="PyWikiCLI - interact with a MediaWiki via its API")
 @click.option('--debug/--no-debug', default=False, help="Enable debug output")
@@ -22,10 +22,10 @@ def cli(ctx, debug):
 
 
 # Import and register subcommands
-from wikibot.commands.get_command import get_command
-from wikibot.commands.put_command import put_command
-from wikibot.commands.crawl_command import crawl_command
-from wikibot.commands.config_command import config_command
+from pywikicli.commands.get_command import get_command
+from pywikicli.commands.put_command import put_command
+from pywikicli.commands.crawl_command import crawl_command
+from pywikicli.commands.config_command import config_command
 
 cli.add_command(get_command)
 cli.add_command(put_command)

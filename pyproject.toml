@@ -21,7 +21,7 @@ classifiers = [
     "Topic :: Utilities",
 ]
 packages = [
-    { include = "wikibot" }
+    { include = "pywikicli" }
 ]
 
 [tool.poetry.dependencies]
@@ -37,7 +37,8 @@ black = "^23.0.0"
 isort = "^5.10.0"
 
 [tool.poetry.scripts]
-pywikicli = "wikibot.cli:cli"
+pywikicli = "pywikicli.cli:cli"
+wikicli = "pywikicli.cli:cli"
 
 [build-system]
 requires = ["poetry-core"]

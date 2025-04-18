@@ -1,24 +1,23 @@
 """
-Implementation of the 'config' command for Wikibot CLI.
-This command manages Wikibot configuration settings.
+Implementation of the 'config' command for PyWikiCLI.
+This command manages PyWikiCLI configuration settings.
 """
 
 import click
-import os
 import yaml
 import logging
-from wikibot.config import load_config, save_config, CONFIG_PATH
+from pywikicli.config import load_config, save_config, CONFIG_PATH
 
 logger = logging.getLogger(__name__)
 
-@click.command(name="config", help="Configure Wikibot settings")
+@click.command(name="config", help="Configure PyWikiCLI settings")
 @click.option('--api-url', help="API endpoint URL")
 @click.option('--username', help="Wiki username")
 @click.option('--password', help="Wiki password (or bot token)")
 @click.option('--show', is_flag=True, help="Show current configuration")
 def config_command(api_url, username, password, show):
     """
-    Configure Wikibot settings or display current configuration.
+    Configure PyWikiCLI settings or display current configuration.
     
     Args:
         api_url: MediaWiki API endpoint URL

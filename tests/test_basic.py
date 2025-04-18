@@ -1,9 +1,9 @@
 """
-Basic tests for the wikibot package.
+Basic tests for the pywikicli package.
 """
 
 import pytest
-from wikibot import __version__
+from pywikicli import __version__
 
 def test_version():
     """Test that version is a string."""
@@ -11,11 +11,11 @@ def test_version():
     
 def test_config_module_imports():
     """Test that the config module can be imported."""
-    from wikibot import config
+    from pywikicli import config
     assert hasattr(config, 'load_config')
     assert hasattr(config, 'save_config')
     
 def test_api_module_imports():
     """Test that the api module can be imported."""
-    from wikibot import api
+    from pywikicli import api
     assert hasattr(api, 'WikiClient')
