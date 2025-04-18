@@ -14,11 +14,12 @@ echo "Current version: $CURRENT_VERSION"
 # Step 2: Bump patch version using poetry
 poetry version patch
 NEW_VERSION=$(poetry version -s)
+echo "Bumping version from $CURRENT_VERSION to $NEW_VERSION"
 echo "New version: $NEW_VERSION"
 
 # Step 3: Update version in __init__.py
 # This is needed because poetry only updates pyproject.toml
-sed -i "s/__version__ = \"$CURRENT_VERSION\"/__version__ = \"$NEW_VERSION\"/" wikibot/__init__.py
+sed -i "s/__version__ = \"$CURRENT_VERSION\"/__version__ = \"$NEW_VERSION\"/" pywikicli/__init__.py
 echo "Updated __init__.py version to $NEW_VERSION"
 
 # Step 4: Regenerate lock file
@@ -26,7 +27,7 @@ poetry lock
 echo "Lock file updated"
 
 # Step 5: Commit the changes
-git add pyproject.toml poetry.lock wikibot/__init__.py
+git add pyproject.toml poetry.lock pywikicli/__init__.py
 git commit -m "Bump version to $NEW_VERSION"
 echo "Changes committed"
 
