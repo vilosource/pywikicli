@@ -1,4 +1,4 @@
-# Wikibot
+# PyWikiCLI
 
 A command-line interface tool for interacting with MediaWiki-powered wikis.
 
@@ -12,10 +12,13 @@ A command-line interface tool for interacting with MediaWiki-powered wikis.
 ## Installation
 
 ```bash
-# Install with Poetry
+# Install from PyPI
+pip install pywikicli
+
+# Or install with Poetry
 poetry install
 
-# Activate the Poetry environment
+# Activate the Poetry environment (if using Poetry)
 poetry shell
 ```
 
@@ -23,16 +26,16 @@ poetry shell
 
 ```bash
 # Configure your wiki connection
-wikibot config
+pywikicli config
 
 # Get a page
-wikibot get "Main Page"
+pywikicli get "Main Page"
 
 # Put content to a page
-wikibot put "My Page" --content "This is my wiki page content"
+pywikicli put "My Page" --content "This is my wiki page content"
 
 # Crawl pages starting from a specific page
-wikibot crawl "Starting Page" --depth 2
+pywikicli crawl "Starting Page" --depth 2
 ```
 
 ## Development

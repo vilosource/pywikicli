@@ -102,6 +102,7 @@ venv.bak/
 
 # Config files with potentially sensitive data
 .wikibot/
+.pywikicli/
 
 # Spyder project settings
 .spyderproject

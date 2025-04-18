@@ -1,5 +1,5 @@
 """
-CLI entry point for Wikibot.
+CLI entry point for PyWikiCLI.
 Defines the main command group and registers subcommands.
 """
 
@@ -7,11 +7,11 @@ import click
 import logging
 from wikibot.config import load_config
 
-@click.group(help="Wikibot CLI - interact with a MediaWiki via its API")
+@click.group(help="PyWikiCLI - interact with a MediaWiki via its API")
 @click.option('--debug/--no-debug', default=False, help="Enable debug output")
 @click.pass_context
 def cli(ctx, debug):
-    """Main entry point for Wikibot CLI."""
+    """Main entry point for PyWikiCLI."""
     # Set up logging
     level = logging.DEBUG if debug else logging.INFO
     logging.basicConfig(level=level, format="%(message)s")

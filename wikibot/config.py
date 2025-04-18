@@ -1,12 +1,12 @@
 """
-Configuration management for Wikibot CLI.
-Handles loading and saving YAML configuration under ~/.wikibot/.
+Configuration management for PyWikiCLI.
+Handles loading and saving YAML configuration under ~/.pywikicli/.
 """
 
 import os
 import yaml
 
-CONFIG_DIR = os.path.expanduser("~/.wikibot")
+CONFIG_DIR = os.path.expanduser("~/.pywikicli")
 CONFIG_PATH = os.path.join(CONFIG_DIR, "config.yaml")
 
 
