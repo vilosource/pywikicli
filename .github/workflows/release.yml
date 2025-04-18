@@ -46,7 +46,7 @@ jobs:
           
       - name: Update poetry.lock
         run: |
-          poetry lock --no-update
+          poetry lock
           
       - name: Build and publish
         env:

@@ -28,7 +28,7 @@ jobs:
         
     - name: Update poetry.lock
       run: |
-        poetry lock --no-update
+        poetry lock
         
     - name: Install project
       run: |
