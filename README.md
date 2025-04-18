@@ -26,16 +26,22 @@ poetry shell
 
 ```bash
 # Configure your wiki connection
-pywikicli config
+wikicli config
 
 # Get a page
-pywikicli get "Main Page"
+wikicli get "Main Page"
+
+# Get a page and save as Markdown
+wikicli get "Main Page" -o md
 
 # Put content to a page
-pywikicli put "My Page" --content "This is my wiki page content"
+wikicli put "My Page" --content "This is my wiki page content"
+
+# Edit a page from a Markdown file
+wikicli put my_page.md
 
 # Crawl pages starting from a specific page
-pywikicli crawl "Starting Page" --depth 2
+wikicli crawl "Starting Page" --depth 2
 ```
 
 ## Development
