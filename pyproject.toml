@@ -37,8 +37,7 @@ black = "^23.0.0"
 isort = "^5.10.0"
 
 [tool.poetry.scripts]
-pywikicli = "pywikicli.cli:cli"
-wikicli = "pywikicli.cli:cli"
+wikibot = "pywikicli.cli:cli"
 
 [build-system]
 requires = ["poetry-core"]
