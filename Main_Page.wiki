@@ -1,0 +1,54 @@
+[[Customer Environment and Server Info]]
+
+[[Azure OptiscanGroup Servers]]
+
+[[Azure DevOps Servers]]
+
+[[Hetzner DevOps Servers]]
+
+[[Azure Subnets]]
+
+[[Local Environment]]
+
+[[Honeywell Voicelink Development]]
+
+[[Abakus Direct]]
+
+[[Abakus Training]]
+
+[[Abakus Training (New)|Abakus Training (New, WIP)]]
+
+[[Knowledgebase]]
+
+[[Abakus Warehouse product developement]]
+
+[[Abakus customization guidelines]]
+
+[[Wiki Instructions]]
+
+[[Jira Best Practices]]
+
+[[Projects]]
+
+[[Hackathons]]
+
+[[UpCloud]]
+
+[[Azure]]
+
+[[DevOps]]
+
+----
+
+= Developer Team Pages =
+
+[[ Team A ]]
+
+[[ Cylons ]] ([[ Team C ]])
+
+
+= Archived Pages =
+
+[[Local Environment and Server Info]]
+
+<s>[[Optiscan Hosted Servers]]</s>

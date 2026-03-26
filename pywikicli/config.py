@@ -13,7 +13,7 @@ CONFIG_PATH = os.path.join(CONFIG_DIR, "config.yaml")
 def load_config():
     """
     Load configuration from YAML file.
-    
+
     Returns:
         dict: Configuration data or empty dict if file doesn't exist
     """
@@ -26,11 +26,11 @@ def load_config():
 def save_config(data: dict):
     """
     Save configuration to YAML file.
-    
+
     Args:
         data (dict): Configuration data to save
     """
     os.makedirs(CONFIG_DIR, exist_ok=True)
-    with open(CONFIG_PATH, 'w') as f:
+    with open(CONFIG_PATH, "w") as f:
         yaml.safe_dump(data, f)
     os.chmod(CONFIG_PATH, 0o600)  # Secure permissions for config file
